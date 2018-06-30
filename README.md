@@ -1,9 +1,7 @@
 # Reinforcement Learning: Q-Learning
-Simple Reinforcement Learning with Tensorflow Part 0: Q-Learning with Tables and Neural Networks
+Simple Reinforcement Learning with Q-Learning with Tables
 
-In this tutorial it was implemented a simple lookup-table version of the algorithm.
-
-Unlike policy gradient methods, which attempt to learn functions which directly map an observation to an action, Q-Learning attempts to learn the value of being in a given state, and taking a specific action there. While both approaches ultimately allow us to take intelligent actions given a situation, the means of getting to that action differ significantly.
+In this tutorial it was implemented a simple lookup-table version of the algorithm. Unlike policy gradient methods, which attempt to learn functions which directly map an observation to an action, Q-Learning attempts to learn the value of being in a given state, and taking a specific action there. While both approaches ultimately allow us to take intelligent actions given a situation, the means of getting to that action differ significantly.
 
 ### Basic Theory - Reinforcement learning
 Reinforcement learning is the method that will used in this tutorial to to enable an agent to determine the optimal policy for navigating the lake and obtaining the frisbee. To do this, we need a few mathematical tools. The first is a way of describing the environment, called a **Markov Decision Process (MDP)**. This is going to give us the language needed to determine our optimal action in any given cell, which is going to be determined through a function called the **action-value function**. This is going to give us a **Q-value**, which tells us the value of taking a particular action in a given cell. The action-value function is the most complex of these mathematical tools, and is derived from the **Bellman equation**.
